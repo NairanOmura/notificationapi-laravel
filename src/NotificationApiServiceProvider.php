@@ -22,9 +22,6 @@ class NotificationApiServiceProvider extends ServiceProvider
 
     public function register(): void
     {
-        foreach (glob(__DIR__.'/*.php') as $filename) {
-            require_once($filename);
-            dd($filename);
-        }
+        require_once(__DIR__.'/helpers.php');
     }
 }
