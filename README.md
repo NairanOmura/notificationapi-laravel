@@ -1,9 +1,3 @@
-
-<p align="center">
-    &nbsp;<img src="https://img.shields.io/packagist/v/agrodata/ptax.svg" />
-     <img src="https://img.shields.io/packagist/dt/agrodata/ptax.svg" />
-</p>
-
 ### Notification-api for Laravel
 
 Package created to use the notification-api Service (https://www.notificationapi.com/) in Laravel projects
