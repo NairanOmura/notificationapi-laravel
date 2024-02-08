@@ -1,0 +1,30 @@
+{
+    "name": "nairanomura/notificationapi",
+    "description": "Biblioteca para utilização do serviço notification-api (https://www.notificationapi.com/) em projetos Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nairan Omura",
+            "email": "nairanomura@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "illuminate/validation": "^9.19.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NairanOmura\\NotificationApi\\NotificationApiServiceProvider"
+            ]
+        }
+    },
+    "autoload" : {
+        "psr-4" : {
+            "NairanOmura\\NotificationApi\\" :  "src/"
+        }
+    }
+}
+
