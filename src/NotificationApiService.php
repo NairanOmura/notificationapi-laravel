@@ -1,6 +1,6 @@
 <?php
 
-namespace NairanOmura\NotificationApi;
+namespace Agrodata\NotificationApi;
 
 class NotificationApiService extends NotificationAPI
 {

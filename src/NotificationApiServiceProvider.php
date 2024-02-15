@@ -1,8 +1,10 @@
 <?php
 
-namespace NairanOmura\NotificationApi;
+namespace Agrodata\NotificationApi;
 
+use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Notifications\ChannelManager;
 
 class NotificationApiServiceProvider extends ServiceProvider
 {
@@ -23,5 +25,11 @@ class NotificationApiServiceProvider extends ServiceProvider
     public function register(): void
     {
         require_once(__DIR__.'/helpers.php');
+
+        Notification::resolved(function (ChannelManager $service) {
+            $service->extend('notification-api', function () {
+                return new NotificationApiChannel();
+            });
+        });
     }
 }
