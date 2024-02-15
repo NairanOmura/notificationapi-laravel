@@ -34,8 +34,6 @@ Register the provider directly in your app configuration file `config/app.php`:
 ]
 ```
 
-This keys was offered by notification api after register an account
-
 The following lines will be auto added in `config/services.php` by provider.
 
 ```php
@@ -55,11 +53,13 @@ return [
 
 So add the following environment variables in .env file to finish a configuration:
 
+
 ```dotenv
 #.env
 NOTIFICATION_API_KEY="clientiD"
 NOTIFICATION_API_SECRET="clientSecret"
 ```
+This keys was offered by notification api after register an account
 
 ### Using
 Use Artisan to create a notification:
