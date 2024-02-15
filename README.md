@@ -52,8 +52,8 @@ So add the following environment variables in .env file to finish a configuratio
 
 ```dotenv
 #.env
-NOTIFICATION_API_KEY="clientiD"
-NOTIFICATION_API_SECRET="clientSecret"
+NOTIFICATION_API_KEY=clientID
+NOTIFICATION_API_SECRET=clientSecret
 ```
 This keys was offered by notification api after register an account
 
@@ -76,7 +76,7 @@ public function via($notifiable)
 Add the method `public function toNotificationApi($notifiable)` to your notification:
 
 ```php
-...
+//...
 
 public function toNotificationApi($notifiable) 
 {
