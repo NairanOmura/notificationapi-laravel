@@ -39,11 +39,7 @@ The following lines will be auto added in `config/services.php` by provider.
 ```php
 return [
    
-    ...
-    ...
-    /*
-     * Add the Firebase API key
-     */
+    //...
     'notification-api' => [
         'key' => env('NOTIFICATION_API_KEY'),
         'secret' => env('NOTIFICATION_API_SECRET'),
@@ -104,7 +100,7 @@ public function toNotificationApi($notifiable)
     class User extends Authenticatable
     {
         use Notifiable;
-    ...
+        //...
 ```
 
 ```php
