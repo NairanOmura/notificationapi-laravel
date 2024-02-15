@@ -92,7 +92,7 @@ public function toNotificationApi($notifiable)
         ],
         "mergeTags" => [
             "userName" => auth()->user()->name,
-            "clickAction" => config('app.env')."/operation/$this->contractNumber/liquidation"
+            "clickAction" => config('app.env')."/example"
         ]
     ];
 }
