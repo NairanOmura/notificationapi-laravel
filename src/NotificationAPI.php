@@ -1,6 +1,6 @@
 <?php
 
-namespace Agrodata\NotificationApi;
+namespace NairanOmura\NotificationApi;
 
 use Exception;
 
