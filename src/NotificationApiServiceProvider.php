@@ -1,6 +1,6 @@
 <?php
 
-namespace Agrodata\NotificationApi;
+namespace NairanOmura\NotificationApi;
 
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\ServiceProvider;
