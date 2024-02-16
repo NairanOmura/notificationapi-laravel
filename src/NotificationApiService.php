@@ -1,8 +1,10 @@
 <?php
 
-namespace Agrodata\NotificationApi;
+namespace NairanOmura\NotificationApi;
 
-class NotificationApiService extends NotificationAPI
+use NotificationAPI\NotificationAPI as NotificationAPIBase;
+
+class NotificationApiService extends NotificationAPIBase
 {
     public function __construct()
     {
